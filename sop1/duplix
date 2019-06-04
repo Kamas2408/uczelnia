@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for i in $@; do
+  case $i in
+    -h) echo "duplix
+Find duplicate files in two locations and do something with them.
+Options (please include them alphabetically):
+ -d  Delete one of the files. If -n is also set, the program shows duplicates to the user and asks for further actions.
+ -h  Display this help prompt.
+ -n  Compare files only by name and not by contents."; exit 0 ;;
+   # -n) 
+       #if  [[ -d $2 && -d $3 ]]; then
+          
+  esac
+done
